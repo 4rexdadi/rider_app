@@ -1,5 +1,6 @@
 import Buttons from "@/src/components/Buttons";
 import Header from "@/src/components/Header";
+import { router } from "expo-router";
 import { FC, useState } from "react";
 import {
 	ScrollView,
@@ -21,7 +22,9 @@ const Otp: FC<OtpProps> = ({}): JSX.Element => {
 		setOTP(filteredText);
 	};
 
-	const HandleOTPSubmit = () => {};
+	const HandleOTPSubmit = () => {
+		router.push("./signInPage");
+	};
 
 	return (
 		<View style={styles.container}>

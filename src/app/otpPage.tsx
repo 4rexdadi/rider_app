@@ -14,6 +14,7 @@ const otpPage: FC<otpPageProps> = ({}): JSX.Element => {
 					headerShadowVisible: false,
 					headerBackButtonMenuEnabled: false,
 					headerTitle: "",
+					headerLeft: () => null,
 					headerTitleStyle: {},
 					headerBackVisible: false,
 				}}

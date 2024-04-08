@@ -1,11 +1,11 @@
 import { Stack } from "expo-router";
 import { FC } from "react";
 import { SafeAreaView } from "react-native";
-import SignUp from "../screens/signUp/SignUp";
+import SignIn from "../screens/signIn/SignIn";
 
-interface signUpPageProps {}
+interface signInPageProps {}
 
-const signUpPage: FC<signUpPageProps> = ({}): JSX.Element => {
+const signInPage: FC<signInPageProps> = ({}): JSX.Element => {
 	return (
 		<SafeAreaView style={{ flex: 1, backgroundColor: "#111827" }}>
 			<Stack.Screen
@@ -20,9 +20,9 @@ const signUpPage: FC<signUpPageProps> = ({}): JSX.Element => {
 				}}
 			/>
 
-			<SignUp />
+			<SignIn />
 		</SafeAreaView>
 	);
 };
 
-export default signUpPage;
+export default signInPage;

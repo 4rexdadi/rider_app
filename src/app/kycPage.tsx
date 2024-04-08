@@ -1,16 +1,16 @@
 import { Stack } from "expo-router";
 import { FC } from "react";
 import { SafeAreaView } from "react-native";
-import SignUp from "../screens/signUp/SignUp";
+import KycAuth from "../screens/kyc/KycAuth";
 
-interface signUpPageProps {}
+interface kycPageProps {}
 
-const signUpPage: FC<signUpPageProps> = ({}): JSX.Element => {
+const kycPage: FC<kycPageProps> = ({}): JSX.Element => {
 	return (
-		<SafeAreaView style={{ flex: 1, backgroundColor: "#111827" }}>
+		<SafeAreaView style={{ flex: 1, backgroundColor: "#FFFFFF" }}>
 			<Stack.Screen
 				options={{
-					headerStyle: { backgroundColor: "#111827" },
+					headerStyle: { backgroundColor: "#FFFFFF" },
 					headerShadowVisible: false,
 					headerBackButtonMenuEnabled: false,
 					headerTitle: "",
@@ -20,9 +20,9 @@ const signUpPage: FC<signUpPageProps> = ({}): JSX.Element => {
 				}}
 			/>
 
-			<SignUp />
+			<KycAuth />
 		</SafeAreaView>
 	);
 };
 
-export default signUpPage;
+export default kycPage;

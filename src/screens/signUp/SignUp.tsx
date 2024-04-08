@@ -104,7 +104,7 @@ const SignUp: FC<SignUpProps> = ({}): JSX.Element => {
 
 				<View style={styles.haveAnAcc}>
 					<Text style={styles.haveAnAccTitle1}>Already have an account?</Text>
-					<TouchableOpacity>
+					<TouchableOpacity onPress={() => router.push("./signInPage")}>
 						<Text style={styles.haveAnAccTitle2}>Sign in</Text>
 					</TouchableOpacity>
 				</View>
