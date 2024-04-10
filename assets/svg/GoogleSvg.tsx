@@ -8,7 +8,7 @@ interface GoogleSvgProps {
 const GoogleSvg: FC<GoogleSvgProps> = ({ styles }): JSX.Element => {
 	return (
 		<Svg style={styles} width="25" height="24" viewBox="0 0 25 24" fill="none">
-			<G id="Social icon" clip-path="url(#clip0_4978_3178)">
+			<G id="Social icon" clipPath="url(#clip0_4978_3178)">
 				<Path
 					id="Vector"
 					d="M24.2663 12.2764C24.2663 11.4607 24.2001 10.6406 24.059 9.83807H12.7402V14.4591H19.222C18.953 15.9494 18.0888 17.2678 16.8233 18.1056V21.1039H20.6903C22.9611 19.0139 24.2663 15.9274 24.2663 12.2764Z"

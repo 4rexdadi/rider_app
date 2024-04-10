@@ -1,5 +1,6 @@
 import KycSvg from "@/assets/svg/KycSvg";
 import Buttons from "@/src/components/Buttons";
+import { router } from "expo-router";
 import { FC } from "react";
 import { ScrollView, Text, View } from "react-native";
 import styles from "./KycAuthStyles";
@@ -16,7 +17,9 @@ const KycAuth: FC<KycAuthProps> = ({}): JSX.Element => {
 		"At least one year experience in riding",
 	];
 
-	const proceed = () => {};
+	const proceed = () => {
+		router.push("./personalDetailsPage");
+	};
 
 	return (
 		<ScrollView style={styles.container}>
