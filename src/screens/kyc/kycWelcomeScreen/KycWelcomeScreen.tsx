@@ -3,11 +3,11 @@ import Buttons from "@/src/components/Buttons";
 import { router } from "expo-router";
 import { FC } from "react";
 import { ScrollView, Text, View } from "react-native";
-import styles from "./KycAuthStyles";
+import styles from "./KycWelcomeScreenStyles";
 
-interface KycAuthProps {}
+interface KycWelcomeScreenProps {}
 
-const KycAuth: FC<KycAuthProps> = ({}): JSX.Element => {
+const KycWelcomeScreen: FC<KycWelcomeScreenProps> = ({}): JSX.Element => {
 	const rules = [
 		"Smart phone",
 		"Valid ID",
@@ -18,7 +18,7 @@ const KycAuth: FC<KycAuthProps> = ({}): JSX.Element => {
 	];
 
 	const proceed = () => {
-		router.push("./personalDetailsPage");
+		router.push("/kyc/personalDetailsPage");
 	};
 
 	return (
@@ -49,4 +49,4 @@ const KycAuth: FC<KycAuthProps> = ({}): JSX.Element => {
 	);
 };
 
-export default KycAuth;
+export default KycWelcomeScreen;

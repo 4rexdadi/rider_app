@@ -29,8 +29,8 @@ const styles = StyleSheet.create({
 	inputContainer: {
 		flexDirection: "row",
 		justifyContent: "center",
-		width: "100%",
 		marginBottom: 64,
+		gap: 6,
 	},
 	input: {
 		borderWidth: 1,
@@ -39,7 +39,6 @@ const styles = StyleSheet.create({
 		padding: 6,
 		textAlign: "center",
 		fontSize: 34,
-		marginRight: 6,
 		color: "#374151",
 		fontFamily: "interBold",
 		width: 45,
@@ -49,6 +48,7 @@ const styles = StyleSheet.create({
 		flexDirection: "row",
 		justifyContent: "center",
 		alignItems: "center",
+		flexWrap: "wrap",
 	},
 	notReceivedTitle1: {
 		color: "#4B5563",

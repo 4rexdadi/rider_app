@@ -23,7 +23,7 @@ const Otp: FC<OtpProps> = ({}): JSX.Element => {
 	};
 
 	const HandleOTPSubmit = () => {
-		router.push("./signInPage");
+		router.push("/auth/signInPage");
 	};
 
 	return (

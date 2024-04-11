@@ -29,8 +29,13 @@ export default function Buttons({
 
 const styles = StyleSheet.create({
 	buttonContainer: {
-		padding: 12,
+		height: 50,
+		paddingHorizontal: 22,
+		paddingVertical: 12,
 		backgroundColor: "#111827",
+		borderRadius: 8,
+		alignItems: "center",
+		justifyContent: "center",
 	},
 	title: {
 		fontSize: 16,

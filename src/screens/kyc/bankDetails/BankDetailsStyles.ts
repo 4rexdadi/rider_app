@@ -4,6 +4,7 @@ const styles = StyleSheet.create({
 	container: {
 		width: "100%",
 		flex: 1,
+		backgroundColor: "#111827",
 	},
 	formContainer: {
 		flex: 1,
@@ -14,7 +15,7 @@ const styles = StyleSheet.create({
 		borderTopRightRadius: 24,
 		marginTop: 40,
 		flexDirection: "column",
-		justifyContent: "space-between",
+		// justifyContent: "space-between",
 	},
 	formTitle: {
 		fontSize: 24,

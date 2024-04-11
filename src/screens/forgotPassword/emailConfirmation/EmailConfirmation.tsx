@@ -39,7 +39,7 @@ const EmailConfirmation: FC<EmailConfirmationProps> = ({}): JSX.Element => {
 
 			<TouchableOpacity
 				style={styles.goBack}
-				onPress={() => router.push("./signInPage")}
+				onPress={() => router.push("/auth/signInPage")}
 			>
 				<Svg width="20" height="20" viewBox="0 0 20 20" fill="none">
 					<Path

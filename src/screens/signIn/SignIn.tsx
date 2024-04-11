@@ -21,8 +21,8 @@ const SignIn: FC<SignInProps> = ({}): JSX.Element => {
 	const HandleSubmit = () => {
 		const hasDoneKYC = false;
 
-		if (hasDoneKYC) router.push("./onlinePage");
-		else router.push("./kycPage");
+		if (hasDoneKYC) router.push("/dashboard/");
+		else router.push("/kyc/");
 	};
 
 	return (
@@ -65,12 +65,14 @@ const SignIn: FC<SignInProps> = ({}): JSX.Element => {
 
 				<View style={styles.noAcc}>
 					<Text style={styles.noAccTitle1}>Don't have an account?</Text>
-					<TouchableOpacity onPress={() => router.push("./signUpPage")}>
+					<TouchableOpacity onPress={() => router.push("/auth/")}>
 						<Text style={styles.noAccTitle2}>Sign up</Text>
 					</TouchableOpacity>
 				</View>
 
-				<TouchableOpacity onPress={() => router.push("./forgotPasswordPage")}>
+				<TouchableOpacity
+					onPress={() => router.push("/auth/forgotPasswordPage")}
+				>
 					<Text style={styles.forgotPassword}>Forgot password</Text>
 				</TouchableOpacity>
 			</ScrollView>

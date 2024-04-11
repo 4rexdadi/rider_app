@@ -1,5 +1,5 @@
 import { useFonts } from "expo-font";
-import { Stack } from "expo-router";
+import { Slot } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 
@@ -36,11 +36,7 @@ const Layout = () => {
 		return null;
 	}
 
-	return (
-		<Stack initialRouteName="signUpPage">
-			<Stack.Screen name="signUpPage" />
-		</Stack>
-	);
+	return <Slot />;
 };
 
 export default Layout;

@@ -28,6 +28,8 @@ const styles = StyleSheet.create({
 		justifyContent: "center",
 		alignItems: "center",
 		marginBottom: 16,
+		height: 50,
+		borderRadius: 8,
 	},
 	googleAuthBtnSvg: {
 		height: 24,
@@ -43,6 +45,7 @@ const styles = StyleSheet.create({
 		flexDirection: "row",
 		justifyContent: "center",
 		alignItems: "center",
+		flexWrap: "wrap",
 	},
 	haveAnAccTitle1: {
 		color: "#4B5563",

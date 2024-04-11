@@ -3,7 +3,9 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
 	container: {
 		width: "100%",
+		flex: 1,
 		paddingHorizontal: 16,
+		backgroundColor: "white",
 	},
 	title: {},
 	resend: {
@@ -11,6 +13,7 @@ const styles = StyleSheet.create({
 		justifyContent: "center",
 		alignItems: "center",
 		marginBottom: 32,
+		flexWrap: "wrap",
 	},
 	resendTitle1: {
 		color: "#4B5563",

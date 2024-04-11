@@ -1,8 +1,9 @@
 import Buttons from "@/src/components/Buttons";
 import Header from "@/src/components/Header";
 import Input from "@/src/components/Input";
+import { router } from "expo-router";
 import { FC, useState } from "react";
-import { Text, View } from "react-native";
+import { ScrollView, Text, View } from "react-native";
 import styles from "./BankDetailsStyles";
 
 interface BankDetailsProps {}
@@ -18,7 +19,9 @@ const BankDetails: FC<BankDetailsProps> = ({}): JSX.Element => {
 		setInputs((values) => ({ ...values, [name]: value }));
 	};
 
-	const HandleSubmit = () => {};
+	const HandleSubmit = () => {
+		router.push("/kyc/kycConfirmationPage");
+	};
 
 	return (
 		<View style={styles.container}>
@@ -28,7 +31,7 @@ const BankDetails: FC<BankDetailsProps> = ({}): JSX.Element => {
 				activeDocTab="Bank Details"
 			/>
 
-			<View style={styles.formContainer}>
+			<ScrollView style={styles.formContainer}>
 				<View>
 					<Text style={styles.formTitle}>Enter account details</Text>
 
@@ -61,11 +64,11 @@ const BankDetails: FC<BankDetailsProps> = ({}): JSX.Element => {
 
 				<Buttons
 					onPress={() => HandleSubmit()}
-					marginTop={24}
-					marginBottom={24}
+					marginTop={146}
+					marginBottom={34}
 					title="Submit"
 				/>
-			</View>
+			</ScrollView>
 		</View>
 	);
 };

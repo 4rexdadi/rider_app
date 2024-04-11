@@ -14,7 +14,7 @@ const GetEmail: FC<GetEmailProps> = ({}): JSX.Element => {
 	const [email, setEmail] = useState("");
 
 	const HandleSubmit = () => {
-		router.push("./emailConfirmationPage");
+		router.push("/auth/emailConfirmationPage");
 	};
 
 	return (
@@ -58,7 +58,7 @@ const GetEmail: FC<GetEmailProps> = ({}): JSX.Element => {
 
 			<TouchableOpacity
 				style={styles.goBack}
-				onPress={() => router.push("./signInPage")}
+				onPress={() => router.push("/auth/signInPage")}
 			>
 				<Svg width="20" height="20" viewBox="0 0 20 20" fill="none">
 					<Path

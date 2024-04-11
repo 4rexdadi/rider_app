@@ -4,6 +4,7 @@ const styles = StyleSheet.create({
 	container: {
 		width: "100%",
 		flex: 1,
+		backgroundColor: "#111827",
 	},
 	formContainer: {
 		flex: 1,
@@ -34,11 +35,13 @@ const styles = StyleSheet.create({
 		fontFamily: "interRegular",
 	},
 	upload: {
-		padding: 12,
+		padding: 25,
+		borderRadius: 15,
 		backgroundColor: "#F3F4F6",
 		alignContent: "center",
-		justifyContent: "center",
+		justifyContent: "space-around",
 		flexDirection: "row",
+		// gap: 78,
 	},
 	uploadText: {
 		fontSize: 14,

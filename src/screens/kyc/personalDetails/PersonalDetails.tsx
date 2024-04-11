@@ -10,7 +10,6 @@ import styles from "./PersonalDetailsStyles";
 interface PersonalDetailsProps {}
 
 const PersonalDetails: FC<PersonalDetailsProps> = ({}): JSX.Element => {
-	const [isFocus, setIsFocus] = useState(false);
 	const [inputs, setInputs] = useState({
 		workMode: "",
 		shiftType: "",
@@ -33,7 +32,7 @@ const PersonalDetails: FC<PersonalDetailsProps> = ({}): JSX.Element => {
 	};
 
 	const HandleSubmit = () => {
-		router.push("./idProofPage");
+		router.push("/kyc/idProofPage");
 	};
 
 	return (
@@ -50,20 +49,19 @@ const PersonalDetails: FC<PersonalDetailsProps> = ({}): JSX.Element => {
 				<View style={{ marginVertical: 8 }}>
 					<Text style={styles.dropDownLabel}>Work mode</Text>
 					<Dropdown
-						style={[styles.dropdown, isFocus && { borderColor: "blue" }]}
+						style={[styles.dropdown]}
 						placeholderStyle={styles.placeholderStyle}
 						selectedTextStyle={styles.selectedTextStyle}
+						itemContainerStyle={styles.itemContainerStyle}
+						containerStyle={styles.containerStyle}
 						data={workMode}
 						maxHeight={300}
 						labelField="label"
 						valueField="value"
 						placeholder="Choose work mode"
 						value={inputs.workMode}
-						onFocus={() => setIsFocus(true)}
-						onBlur={() => setIsFocus(false)}
 						onChange={(item) => {
 							HandleChange("workMode", item.value);
-							setIsFocus(false);
 						}}
 					/>
 				</View>
@@ -71,7 +69,7 @@ const PersonalDetails: FC<PersonalDetailsProps> = ({}): JSX.Element => {
 				<View style={{ marginVertical: 8 }}>
 					<Text style={styles.dropDownLabel}>Shift type</Text>
 					<Dropdown
-						style={[styles.dropdown, isFocus && { borderColor: "blue" }]}
+						style={[styles.dropdown]}
 						placeholderStyle={styles.placeholderStyle}
 						selectedTextStyle={styles.selectedTextStyle}
 						data={shiftType}
@@ -80,11 +78,8 @@ const PersonalDetails: FC<PersonalDetailsProps> = ({}): JSX.Element => {
 						valueField="value"
 						placeholder="Choose shift types"
 						value={inputs.shiftType}
-						onFocus={() => setIsFocus(true)}
-						onBlur={() => setIsFocus(false)}
 						onChange={(item) => {
 							HandleChange("shiftType", item.value);
-							setIsFocus(false);
 						}}
 					/>
 				</View>

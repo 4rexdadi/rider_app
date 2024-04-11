@@ -23,7 +23,7 @@ const SignUp: FC<SignUpProps> = ({}): JSX.Element => {
 	};
 
 	const HandleSubmit = () => {
-		router.push("./otpPage");
+		router.push("/auth/otpPage");
 	};
 
 	const googleAuth = () => {};
@@ -104,7 +104,7 @@ const SignUp: FC<SignUpProps> = ({}): JSX.Element => {
 
 				<View style={styles.haveAnAcc}>
 					<Text style={styles.haveAnAccTitle1}>Already have an account?</Text>
-					<TouchableOpacity onPress={() => router.push("./signInPage")}>
+					<TouchableOpacity onPress={() => router.push("/auth/signInPage")}>
 						<Text style={styles.haveAnAccTitle2}>Sign in</Text>
 					</TouchableOpacity>
 				</View>

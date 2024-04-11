@@ -12,13 +12,23 @@ interface IdProofProps {}
 const Upload = () => {
 	return (
 		<View style={styles.upload}>
-			<TouchableOpacity style={{ marginRight: 78 }}>
+			<TouchableOpacity
+				style={{
+					alignItems: "center",
+					justifyContent: "center",
+				}}
+			>
 				<CameraSvg />
 
 				<Text style={styles.uploadText}>Camera</Text>
 			</TouchableOpacity>
 
-			<TouchableOpacity>
+			<TouchableOpacity
+				style={{
+					alignItems: "center",
+					justifyContent: "center",
+				}}
+			>
 				<UploadSvg />
 
 				<Text style={styles.uploadText}>Upload</Text>
@@ -45,7 +55,7 @@ const IdProof: FC<IdProofProps> = ({}): JSX.Element => {
 	};
 
 	const HandleSubmit = () => {
-		router.push("./bankDetailsPage");
+		router.push("/kyc/bankDetailsPage");
 	};
 
 	return (

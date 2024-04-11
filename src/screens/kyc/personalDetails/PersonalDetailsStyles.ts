@@ -4,6 +4,7 @@ const styles = StyleSheet.create({
 	container: {
 		width: "100%",
 		flex: 1,
+		backgroundColor: "#111827",
 	},
 	formContainer: {
 		flex: 1,
@@ -26,36 +27,31 @@ const styles = StyleSheet.create({
 		color: "#344054",
 		fontFamily: "interSemiBold",
 	},
-	dropDownContainer: {
-		borderWidth: 1,
-		borderColor: "#D0D5DD",
-	},
-	dropDown: {
-		width: "100%",
-		backgroundColor: "white",
-		borderWidth: 0,
-		fontSize: 16,
-		color: "#344054",
-		paddingHorizontal: 14,
-		paddingVertical: 6,
-		fontFamily: "interRegular",
-	},
 	dropdown: {
 		height: 50,
 		borderColor: "gray",
-		borderWidth: 0.5,
+		// borderColor: "#D0D5DD",
+		borderWidth: 1,
 		borderRadius: 8,
-		paddingHorizontal: 8,
+		paddingHorizontal: 14,
+		paddingVertical: 6,
 	},
 	placeholderStyle: {
 		fontSize: 16,
+		color: "#667085",
 	},
 	selectedTextStyle: {
+		color: "#344054",
+		fontFamily: "interRegular",
 		fontSize: 16,
 	},
-	inputSearchStyle: {
-		height: 40,
-		fontSize: 16,
+	itemContainerStyle: {
+		borderRadius: 8,
+	},
+	containerStyle: {
+		borderColor: "gray",
+		borderWidth: 1,
+		borderRadius: 8,
 	},
 });
 
