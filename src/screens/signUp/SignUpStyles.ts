@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
 		justifyContent: "center",
 		alignItems: "center",
 		flexWrap: "wrap",
+		marginBottom: 60,
 	},
 	haveAnAccTitle1: {
 		color: "#4B5563",

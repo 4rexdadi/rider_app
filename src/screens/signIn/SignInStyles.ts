@@ -49,6 +49,7 @@ const styles = StyleSheet.create({
 		fontSize: 16,
 		fontFamily: "interBold",
 		textAlign: "center",
+		marginBottom: 40,
 	},
 });
 

@@ -106,7 +106,7 @@ const PersonalDetails: FC<PersonalDetailsProps> = ({}): JSX.Element => {
 				<Buttons
 					onPress={() => HandleSubmit()}
 					marginTop={146}
-					marginBottom={34}
+					marginBottom={60}
 					title="Next"
 				/>
 			</ScrollView>

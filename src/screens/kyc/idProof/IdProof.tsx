@@ -117,7 +117,7 @@ const IdProof: FC<IdProofProps> = ({}): JSX.Element => {
 				<Buttons
 					onPress={() => HandleSubmit()}
 					marginTop={36}
-					marginBottom={24}
+					marginBottom={60}
 					title="Next"
 				/>
 			</ScrollView>
