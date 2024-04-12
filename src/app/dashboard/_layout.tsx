@@ -8,10 +8,11 @@ const Layout = () => {
 				contentStyle: { flex: 1 },
 				headerShadowVisible: false,
 				headerTitle: "",
-				headerBackVisible: false,
+				headerLeft: () => null,
 			}}
 		>
 			<Stack.Screen options={{}} name="index" />
+			<Stack.Screen options={{ header: () => null }} name="(online)" />
 		</Stack>
 	);
 };

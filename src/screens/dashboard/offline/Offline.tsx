@@ -1,4 +1,5 @@
 import Buttons from "@/src/components/Buttons";
+import { router } from "expo-router";
 import { FC } from "react";
 import { Image, Text, View } from "react-native";
 import styles from "./OfflineStyles";
@@ -6,7 +7,9 @@ import styles from "./OfflineStyles";
 interface OfflineProps {}
 
 const Offline: FC<OfflineProps> = ({}): JSX.Element => {
-	const goOnline = () => {};
+	const goOnline = () => {
+		router.push("/dashboard/(online)/home");
+	};
 
 	const starts = {
 		MoneyEarned: "# 256,000.50",
