@@ -14,15 +14,16 @@ const styles = StyleSheet.create({
 		flex: 1,
 	},
 	noOrder: {
-		width: "100%",
-		padding: 10,
-		flexDirection: "column",
-		alignItems: "center",
+		width: "auto",
+		padding: 13,
 		backgroundColor: COLORS.primary,
+		alignSelf: "center",
+		borderRadius: 20,
+	},
+	noOrderText: {
 		fontSize: 13,
 		color: COLORS.secondary,
 		fontFamily: FONTS.inter400,
-		borderRadius: 8,
 	},
 	btnContainer: {
 		width: "100%",
