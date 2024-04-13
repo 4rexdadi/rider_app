@@ -2,6 +2,7 @@ import { CameraSvg, UploadSvg } from "@/assets/svg/UploadSvg";
 import Buttons from "@/src/components/Buttons";
 import Header from "@/src/components/Header";
 import Input from "@/src/components/Input";
+import { COLORS } from "@/src/constants/constant";
 import { router } from "expo-router";
 import { FC, useState } from "react";
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
@@ -84,7 +85,7 @@ const IdProof: FC<IdProofProps> = ({}): JSX.Element => {
 							key={i}
 							style={{
 								backgroundColor:
-									inputs.documentType === doc ? "#F3F4F6" : "#fffff",
+									inputs.documentType === doc ? "#F3F4F6" : COLORS.white,
 								...styles.doc,
 							}}
 						>

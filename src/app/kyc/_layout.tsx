@@ -1,10 +1,11 @@
+import { COLORS } from "@/src/constants/constant";
 import { Stack } from "expo-router";
 
 const Layout = () => {
 	return (
 		<Stack
 			screenOptions={{
-				headerStyle: { backgroundColor: "#111827" },
+				headerStyle: { backgroundColor: COLORS.primary },
 				contentStyle: { flex: 1 },
 				headerShadowVisible: false,
 				headerBackButtonMenuEnabled: false,
@@ -16,7 +17,7 @@ const Layout = () => {
 		>
 			<Stack.Screen
 				options={{
-					headerStyle: { backgroundColor: "#FFFFFF" },
+					headerStyle: { backgroundColor: COLORS.white },
 				}}
 				name="index"
 			/>
@@ -28,7 +29,7 @@ const Layout = () => {
 			<Stack.Screen options={{}} name="idProofPage" />
 
 			<Stack.Screen
-				options={{ headerStyle: { backgroundColor: "#FFFFFF" } }}
+				options={{ headerStyle: { backgroundColor: COLORS.white } }}
 				name="kycConfirmationPage"
 			/>
 		</Stack>

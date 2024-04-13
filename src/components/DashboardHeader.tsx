@@ -6,6 +6,7 @@ import {
 import { router } from "expo-router";
 import { FC } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { COLORS, FONTS, SHADOWS } from "../constants/constant";
 
 interface DashboardHeaderProps {}
 
@@ -47,7 +48,7 @@ const styles = StyleSheet.create({
 		paddingTop: 60,
 		paddingBottom: 16,
 		paddingHorizontal: 22,
-		backgroundColor: "#fff",
+		backgroundColor: COLORS.white,
 	},
 	goOnline: {
 		alignItems: "center",
@@ -56,18 +57,12 @@ const styles = StyleSheet.create({
 		gap: 7,
 		padding: 5,
 		borderRadius: 2,
-		backgroundColor: "#F4C430",
-		shadowColor: "#00000040",
-		shadowOffset: {
-			height: 4,
-			width: 4,
-		},
-		shadowOpacity: 0.5,
-		shadowRadius: 4,
-		// box-shadow: 0px 4px 4px 2px ;
+		backgroundColor: COLORS.secondary,
+		...SHADOWS.large,
 	},
 	goOnlineText: {
-		color: "#111827",
+		color: COLORS.primary,
 		fontSize: 12,
+		fontFamily: FONTS.inter500,
 	},
 });

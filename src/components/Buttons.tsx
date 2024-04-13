@@ -1,4 +1,5 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
+import { COLORS, FONTS } from "../constants/constant";
 
 interface ButtonsProps {
 	title: string;
@@ -32,16 +33,15 @@ const styles = StyleSheet.create({
 		height: 50,
 		paddingHorizontal: 22,
 		paddingVertical: 12,
-		backgroundColor: "#111827",
+		backgroundColor: COLORS.primary,
 		borderRadius: 8,
 		alignItems: "center",
 		justifyContent: "center",
 	},
 	title: {
 		fontSize: 16,
-		fontWeight: "600",
-		color: "#FCD34D",
+		color: COLORS.secondary,
 		textAlign: "center",
-		fontFamily: "interSemiBold",
+		fontFamily: FONTS.inter600,
 	},
 });

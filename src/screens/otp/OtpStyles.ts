@@ -1,14 +1,15 @@
+import { COLORS, FONTS } from "@/src/constants/constant";
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		width: "100%",
-		backgroundColor: "#111827",
+		backgroundColor: COLORS.primary,
 	},
 	verifyContainer: {
 		flex: 1,
-		backgroundColor: "#ffffff",
+		backgroundColor: COLORS.white,
 		paddingHorizontal: 24,
 		paddingVertical: 16,
 		borderTopLeftRadius: 24,
@@ -18,13 +19,13 @@ const styles = StyleSheet.create({
 		fontSize: 24,
 		color: "#101828",
 		marginBottom: 8,
-		fontFamily: "interBold",
+		fontFamily: FONTS.inter700,
 	},
 	verifySubTitle: {
 		fontSize: 16,
 		color: "#101828",
 		marginBottom: 32,
-		fontFamily: "interRegular",
+		fontFamily: FONTS.inter400,
 	},
 	inputContainer: {
 		flexDirection: "row",
@@ -40,7 +41,7 @@ const styles = StyleSheet.create({
 		textAlign: "center",
 		fontSize: 34,
 		color: "#374151",
-		fontFamily: "interBold",
+		fontFamily: FONTS.inter700,
 		width: 45,
 		height: 45,
 	},
@@ -53,13 +54,13 @@ const styles = StyleSheet.create({
 	notReceivedTitle1: {
 		color: "#4B5563",
 		fontSize: 16,
-		fontFamily: "interBold",
+		fontFamily: FONTS.inter700,
 		marginRight: 10,
 	},
 	notReceivedTitle2: {
 		color: "#1F2937",
 		fontSize: 16,
-		fontFamily: "interBold",
+		fontFamily: FONTS.inter700,
 	},
 });
 

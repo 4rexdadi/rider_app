@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { StyleSheet, Text, View } from "react-native";
+import { FONTS } from "../constants/constant";
 
 interface ForgotPasswordHeaderProps {
 	Icon: any;
@@ -37,14 +38,14 @@ const styles = StyleSheet.create({
 		fontSize: 24,
 		color: "#101828",
 		textAlign: "center",
-		fontFamily: "interBold",
+		fontFamily: FONTS.inter700,
 		marginBottom: 8,
 	},
 	subTitle: {
 		fontSize: 16,
 		color: "#667085",
 		textAlign: "center",
-		fontFamily: "interRegular",
+		fontFamily: FONTS.inter400,
 	},
 });
 

@@ -2,6 +2,7 @@ import BackSvg from "@/assets/svg/BackSvg";
 import { router } from "expo-router";
 import { FC } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { FONTS } from "../constants/constant";
 
 interface HeaderProps {
 	headerTitle: string;
@@ -64,7 +65,7 @@ const styles = StyleSheet.create({
 		fontSize: 20,
 		color: "#FCD34D",
 		textAlign: "center",
-		fontFamily: "interBold",
+		fontFamily: FONTS.inter700,
 		flex: 1,
 		marginRight: 40,
 	},
@@ -90,7 +91,7 @@ const styles = StyleSheet.create({
 	kycTitle: {
 		fontSize: 14,
 		color: "#D0D5DD",
-		fontFamily: "interRegular",
+		fontFamily: FONTS.inter400,
 		marginBottom: 5,
 	},
 	kycLine: {

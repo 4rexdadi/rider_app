@@ -5,10 +5,11 @@ import {
 	WalletSvg,
 } from "@/assets/svg/DashboardTabSvg";
 import DashboardHeader from "@/src/components/DashboardHeader";
+import { COLORS } from "@/src/constants/constant";
 import { Tabs } from "expo-router";
 
 const TabLayout = () => {
-	const tabsColor = "#111827";
+	const tabsColor = COLORS.primary;
 
 	return (
 		<Tabs

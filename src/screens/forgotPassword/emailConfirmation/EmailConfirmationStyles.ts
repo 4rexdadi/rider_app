@@ -1,3 +1,4 @@
+import { COLORS, FONTS } from "@/src/constants/constant";
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
@@ -5,7 +6,7 @@ const styles = StyleSheet.create({
 		width: "100%",
 		flex: 1,
 		paddingHorizontal: 16,
-		backgroundColor: "white",
+		backgroundColor: COLORS.white,
 	},
 	title: {},
 	resend: {
@@ -18,13 +19,13 @@ const styles = StyleSheet.create({
 	resendTitle1: {
 		color: "#4B5563",
 		fontSize: 16,
-		fontFamily: "interBold",
+		fontFamily: FONTS.inter700,
 		marginRight: 10,
 	},
 	resendTitle2: {
 		color: "#1F2937",
 		fontSize: 16,
-		fontFamily: "interBold",
+		fontFamily: FONTS.inter700,
 	},
 	goBack: {
 		flexDirection: "row",

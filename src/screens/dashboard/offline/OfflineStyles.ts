@@ -1,3 +1,4 @@
+import { COLORS } from "@/src/constants/constant";
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
@@ -9,7 +10,7 @@ const styles = StyleSheet.create({
 		width: "100%",
 		alignItems: "flex-start",
 		justifyContent: "center",
-		backgroundColor: "#fff",
+		backgroundColor: COLORS.white,
 		paddingHorizontal: 25,
 		paddingVertical: 8,
 	},
@@ -40,10 +41,10 @@ const styles = StyleSheet.create({
 	starts: {
 		paddingHorizontal: 16,
 		paddingVertical: 23,
-		backgroundColor: "#fff",
+		backgroundColor: COLORS.white,
 	},
 	title: {
-		color: "#111827",
+		color: COLORS.primary,
 		textAlign: "center",
 		fontSize: 12,
 		marginBottom: 14,
@@ -71,7 +72,7 @@ const styles = StyleSheet.create({
 	},
 	value: {
 		fontSize: 12,
-		color: "#111827",
+		color: COLORS.primary,
 	},
 });
 

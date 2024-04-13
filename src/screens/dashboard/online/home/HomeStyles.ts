@@ -1,3 +1,4 @@
+import { COLORS, FONTS } from "@/src/constants/constant";
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
@@ -17,8 +18,10 @@ const styles = StyleSheet.create({
 		padding: 10,
 		flexDirection: "column",
 		alignItems: "center",
-		backgroundColor: "#111827",
-		color: "#F4C430",
+		backgroundColor: COLORS.primary,
+		fontSize: 13,
+		color: COLORS.secondary,
+		fontFamily: FONTS.inter400,
 		borderRadius: 8,
 	},
 	btnContainer: {
@@ -31,7 +34,7 @@ const styles = StyleSheet.create({
 		height: 45,
 		paddingHorizontal: 22,
 		paddingVertical: 12,
-		backgroundColor: "#111827",
+		backgroundColor: COLORS.primary,
 		borderRadius: 8,
 		alignItems: "center",
 		justifyContent: "center",
@@ -42,7 +45,7 @@ const styles = StyleSheet.create({
 		paddingVertical: 12,
 		borderRadius: 8,
 		borderWidth: 1,
-		borderColor: "#111827",
+		borderColor: COLORS.primary,
 		alignItems: "center",
 		justifyContent: "center",
 	},
@@ -50,13 +53,13 @@ const styles = StyleSheet.create({
 		fontSize: 15,
 		color: "#FCD34D",
 		textAlign: "center",
-		fontFamily: "interRegular",
+		fontFamily: FONTS.inter400,
 	},
 	btnText2: {
 		fontSize: 15,
-		color: "#111827",
+		color: COLORS.primary,
 		textAlign: "center",
-		fontFamily: "interRegular",
+		fontFamily: FONTS.inter400,
 	},
 });
 

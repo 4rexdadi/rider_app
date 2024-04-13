@@ -1,14 +1,15 @@
+import { COLORS, FONTS } from "@/src/constants/constant";
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
 	container: {
 		width: "100%",
 		flex: 1,
-		backgroundColor: "#111827",
+		backgroundColor: COLORS.primary,
 	},
 	formContainer: {
 		flex: 1,
-		backgroundColor: "#ffffff",
+		backgroundColor: COLORS.white,
 		paddingHorizontal: 24,
 		paddingVertical: 20,
 		borderTopLeftRadius: 24,
@@ -21,7 +22,7 @@ const styles = StyleSheet.create({
 		fontSize: 24,
 		color: "#101828",
 		marginBottom: 8,
-		fontFamily: "interBold",
+		fontFamily: FONTS.inter700,
 	},
 });
 

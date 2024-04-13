@@ -1,14 +1,15 @@
+import { COLORS, FONTS } from "@/src/constants/constant";
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		width: "100%",
-		backgroundColor: "#111827",
+		backgroundColor: COLORS.primary,
 	},
 	formContainer: {
 		flex: 1,
-		backgroundColor: "#ffffff",
+		backgroundColor: COLORS.white,
 		paddingHorizontal: 24,
 		paddingVertical: 16,
 		borderTopLeftRadius: 24,
@@ -18,7 +19,7 @@ const styles = StyleSheet.create({
 		fontSize: 24,
 		color: "#101828",
 		marginBottom: 16,
-		fontFamily: "interBold",
+		fontFamily: FONTS.inter700,
 	},
 	googleAuthBtn: {
 		padding: 12,
@@ -39,7 +40,7 @@ const styles = StyleSheet.create({
 	googleAuthBtnText: {
 		color: "#344054",
 		fontSize: 16,
-		fontFamily: "interSemiBold",
+		fontFamily: FONTS.inter600,
 	},
 	haveAnAcc: {
 		flexDirection: "row",
@@ -51,13 +52,13 @@ const styles = StyleSheet.create({
 	haveAnAccTitle1: {
 		color: "#4B5563",
 		fontSize: 16,
-		fontFamily: "interBold",
+		fontFamily: FONTS.inter700,
 		marginRight: 10,
 	},
 	haveAnAccTitle2: {
 		color: "#1F2937",
 		fontSize: 16,
-		fontFamily: "interBold",
+		fontFamily: FONTS.inter700,
 	},
 });
 

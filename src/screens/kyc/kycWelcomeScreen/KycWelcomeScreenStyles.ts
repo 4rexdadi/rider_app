@@ -1,20 +1,21 @@
+import { COLORS, FONTS } from "@/src/constants/constant";
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
 	container: {
 		width: "100%",
 		paddingHorizontal: 24,
-		backgroundColor: "white",
+		backgroundColor: COLORS.white,
 	},
 	title: {
 		color: "#101828",
 		fontSize: 24,
-		fontFamily: "interExtraBold",
+		fontFamily: FONTS.inter800,
 	},
 	subTitle: {
 		color: "#6B7280",
 		fontSize: 14,
-		fontFamily: "interRegular",
+		fontFamily: FONTS.inter400,
 		marginTop: 12,
 		marginBottom: 5,
 	},
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
 	ruleText: {
 		color: "#1F2937",
 		fontSize: 16,
-		fontFamily: "interSemiBold",
+		fontFamily: FONTS.inter600,
 	},
 });
 

@@ -5,6 +5,7 @@ import {
 	TextInputProps,
 	View,
 } from "react-native";
+import { COLORS, FONTS } from "../constants/constant";
 
 interface InputProps extends TextInputProps {
 	label: string;
@@ -31,24 +32,23 @@ const styles = StyleSheet.create({
 		fontSize: 14,
 		marginBottom: 6,
 		color: "#344054",
-		fontFamily: "interSemiBold",
+		fontFamily: FONTS.inter600,
 	},
 	input: {
 		height: 50,
-		borderColor: "gray",
-		// borderColor: "#D0D5DD",
+		borderColor: COLORS.gray,
 		borderWidth: 1,
 		borderRadius: 8,
 		paddingHorizontal: 14,
 		paddingVertical: 6,
 		color: "#344054",
 		fontSize: 16,
-		fontFamily: "interRegular",
+		fontFamily: FONTS.inter400,
 	},
 	error: {
 		fontSize: 14,
 		color: "#667085",
-		fontFamily: "interRegular",
+		fontFamily: FONTS.inter400,
 		marginTop: 6,
 	},
 });
